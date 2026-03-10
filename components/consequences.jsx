@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box, Flex, Heading, Text, Image, Button, List, ListItem } from '@chakra-ui/core'
 
-const ConsequencesSection: React.FC = () => {
+const ConsequencesSection = () => {
   return (
     <Flex
       flexDirection={['column', 'column', 'row']}

@@ -8,7 +8,7 @@ const projects = [
 ];
 
 export default function InteriorDesignShowcase() {
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
     <Box width="100%" py="20" bg="gray.50">

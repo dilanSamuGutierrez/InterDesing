@@ -1,15 +1,15 @@
-import React from 'react'
-import { Text, Flex, Grid, Box } from '@chakra-ui/core'
-import Logo from './logo'
+import React from 'react';
+import { Text, Flex, Grid, Box } from '@chakra-ui/core';
+import Logo from './logo';
 import {
   FaFacebookF,
   FaTwitter,
   FaGoogle,
   FaInstagram,
   FaYoutube
-} from 'react-icons/fa'
+} from 'react-icons/fa';
 
-const Footer: React.FC = () => {
+const Footer = () => {
   return (
     <Grid as="footer" templateColumns="repeat(6, 1fr)" mt="16" mb="16">
       {/* Logo y descripción */}
@@ -30,11 +30,11 @@ const Footer: React.FC = () => {
           alignItems="center"
           mt="8"
         >
-          <Box as={FaFacebookF} size="22px" color="orange.500" mr="12px" />
-          <Box as={FaTwitter} size="22px" color="orange.500" mr="12px" />
-          <Box as={FaGoogle} size="22px" color="orange.500" mr="12px" />
-          <Box as={FaInstagram} size="22px" color="orange.500" mr="12px" />
-          <Box as={FaYoutube} size="22px" color="orange.500" />
+          <Box as={FaFacebookF} fontSize="22px" color="orange.500" mr="12px" />
+          <Box as={FaTwitter} fontSize="22px" color="orange.500" mr="12px" />
+          <Box as={FaGoogle} fontSize="22px" color="orange.500" mr="12px" />
+          <Box as={FaInstagram} fontSize="22px" color="orange.500" mr="12px" />
+          <Box as={FaYoutube} fontSize="22px" color="orange.500" />
         </Flex>
       </Flex>
 
@@ -89,7 +89,7 @@ const Footer: React.FC = () => {
         </Text>
       </Flex>
     </Grid>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

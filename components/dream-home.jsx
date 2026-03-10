@@ -2,7 +2,7 @@ import React from 'react'
 import { Flex, Heading, Image, Text } from '@chakra-ui/core'
 import Button from './button'
 
-const DreamHome: React.FC = () => {
+const DreamHome = () => {
   return (
     <Flex width="100%" flexDirection="column" alignItems="center" mt="20" mb="12">
       {/* TITULO PRINCIPAL */}

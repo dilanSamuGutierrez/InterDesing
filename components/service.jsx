@@ -1,7 +1,7 @@
-import React from 'react'
-import { Grid, Text, Flex, Heading, Button, Box, Image } from '@chakra-ui/core'
+import React from 'react';
+import { Grid, Text, Flex, Heading, Button, Box, Image } from '@chakra-ui/core';
 
-const Service: React.FC = () => {
+const Service = () => {
   return (
     <Box position="relative">
       <Image
@@ -70,7 +70,6 @@ const Service: React.FC = () => {
 
           <Button
             alignSelf="flex-start"
-            variantColor="white"
             backgroundColor="#fff"
             color="orange.500"
             width="fit-content"
@@ -80,7 +79,7 @@ const Service: React.FC = () => {
         </Flex>
       </Grid>
     </Box>
-  )
-}
+  );
+};
 
-export default Service
+export default Service;

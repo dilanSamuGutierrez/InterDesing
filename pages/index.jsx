@@ -13,7 +13,7 @@ import ConsequencesSection from '../components/consequences'
 import FloatingButtons from '../components/floating-buttons'
 import { Divider } from '@chakra-ui/core'
 
-const Home: React.FC = () => {
+const Home = () => {
   return (
     <>
       <Nav />
@@ -23,10 +23,10 @@ const Home: React.FC = () => {
       <Service />
       <About />
       <CreativeDirector />
-      <ConsequencesSection/>
+      <ConsequencesSection />
       <FAQCTA />
       <OurProject />
-      <FloatingButtons/>
+      <FloatingButtons />
       <Divider mt="24" />
       <Footer />
     </>

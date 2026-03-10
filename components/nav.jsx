@@ -1,12 +1,8 @@
-import React from "react"
-import { Box, Flex, Link, Button } from "@chakra-ui/core"
-import Logo from "./logo"
+import React from "react";
+import { Box, Flex, Link, Button } from "@chakra-ui/core";
+import Logo from "./logo";
 
-interface MenuItemProps {
-  link?: string
-}
-
-const MenuItems: React.FC<MenuItemProps> = ({ children, link }) => (
+const MenuItems = ({ children, link }) => (
   <Link
     href={link}
     mt={["4", "4", "0", "0"]}
@@ -22,11 +18,11 @@ const MenuItems: React.FC<MenuItemProps> = ({ children, link }) => (
   >
     {children}
   </Link>
-)
+);
 
 const Nav = (props) => {
-  const [show, setShow] = React.useState(false)
-  const handleToggle = () => setShow(!show)
+  const [show, setShow] = React.useState(false);
+  const handleToggle = () => setShow(!show);
 
   return (
     <Flex
@@ -117,7 +113,7 @@ const Nav = (props) => {
         </Flex>
       </Flex>
     </Flex>
-  )
-}
+  );
+};
 
-export default Nav
+export default Nav;

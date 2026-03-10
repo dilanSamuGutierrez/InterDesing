@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Box } from "@chakra-ui/core";
 import { FaWhatsapp, FaArrowUp } from "react-icons/fa";
 
-const FloatingButtons: React.FC = () => {
+const FloatingButtons = () => {
   const [showScroll, setShowScroll] = useState(false);
   const [hoverLeft, setHoverLeft] = useState(false);
   const [hoverRight, setHoverRight] = useState(false);

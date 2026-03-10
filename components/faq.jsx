@@ -1,12 +1,7 @@
 import React, { useState } from 'react'
 import { Box, Flex, Heading, Text, Button } from '@chakra-ui/core'
 
-interface FAQItem {
-  question: string
-  answer: string
-}
-
-const faqs: FAQItem[] = [
+const faqs = [
   {
     question: "¿Cuánto cuesta un proyecto de diseño de dormitorio?",
     answer: "Nuestros proyectos empiezan desde $999.000, y cada diseño se adapta a tus necesidades y espacio disponible.",
@@ -25,10 +20,10 @@ const faqs: FAQItem[] = [
   },
 ]
 
-const FAQCTA: React.FC = () => {
-  const [openIndex, setOpenIndex] = useState<number | null>(null)
+const FAQCTA = () => {
+  const [openIndex, setOpenIndex] = useState(null)
 
-  const toggleFAQ = (index: number) => {
+  const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index)
   }
 
@@ -97,7 +92,7 @@ const FAQCTA: React.FC = () => {
           borderRadius="50px"
           px="10"
           py="6"
-          _hover={{}} // Chakra Core 0.8 ignora esto, pero no afecta
+          _hover={{}} 
           size="lg"
         >
           Agenda tu asesoría ahora

@@ -2,7 +2,7 @@ import React from 'react'
 import { Box, Flex, Heading, Text, Image, Grid } from '@chakra-ui/core'
 import Button from './button'
 
-const About: React.FC = () => {
+const About = () => {
   return (
     <Grid templateColumns="repeat(6, 1fr)" marginY="24" alignItems="center">
       {/* IZQUIERDA: Oferta y CTA */}

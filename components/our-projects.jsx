@@ -1,7 +1,7 @@
-import React from 'react'
-import { Flex, Text, Heading, Grid, Image } from '@chakra-ui/core'
+import React from 'react';
+import { Flex, Text, Heading, Grid, Image } from '@chakra-ui/core';
 
-const OurProject: React.FC = () => {
+const OurProject = () => {
   const images = [
     '/grid/1.png',
     '/grid/2.png',
@@ -9,7 +9,7 @@ const OurProject: React.FC = () => {
     '/grid/4.png',
     '/grid/5.png',
     '/grid/6.png',
-  ]
+  ];
 
   return (
     <Flex flexDirection="column" alignItems="center" mt="24">
@@ -31,18 +31,18 @@ const OurProject: React.FC = () => {
             borderRadius="16px"
             style={{ transition: 'transform 0.3s, box-shadow 0.3s' }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.transform = 'scale(1.05)'
-              e.currentTarget.style.boxShadow = '0 10px 20px rgba(0,0,0,0.2)'
+              e.currentTarget.style.transform = 'scale(1.05)';
+              e.currentTarget.style.boxShadow = '0 10px 20px rgba(0,0,0,0.2)';
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.transform = 'scale(1)'
-              e.currentTarget.style.boxShadow = 'none'
+              e.currentTarget.style.transform = 'scale(1)';
+              e.currentTarget.style.boxShadow = 'none';
             }}
           />
         ))}
       </Grid>
     </Flex>
-  )
-}
+  );
+};
 
-export default OurProject
+export default OurProject;

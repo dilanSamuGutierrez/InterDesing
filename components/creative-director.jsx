@@ -1,7 +1,7 @@
 import React from 'react'
 import { Flex, Text, Heading, Grid, Image, Box } from '@chakra-ui/core'
 
-const Testimonials: React.FC = () => {
+const Testimonials = () => {
   const testimonials = [
     {
       name: "Simme John",
