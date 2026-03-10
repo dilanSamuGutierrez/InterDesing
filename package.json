@@ -18,7 +18,7 @@
     "react-icons": "^3.11.0"
   },
   "engines": {
-    "node": "18.x"
+    "node": "24.x"
   },
   "devDependencies": {
     "@types/node": "^14.11.2",
